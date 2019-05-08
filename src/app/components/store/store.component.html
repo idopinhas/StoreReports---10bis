@@ -1,0 +1,20 @@
+<section class="store-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 m-auto">
+        <div class="breadcrumb-wrapper">
+          <app-breadcrumb></app-breadcrumb>
+        </div>
+        <app-back-btn (click)="backBtnClick()"></app-back-btn>
+        <ul class="list-group">
+          <div class="loader" *ngIf="loaderActive">
+            <img src="https://gifimage.net/wp-content/uploads/2018/04/loader-gif-transparent-background-10.gif" alt="loader" />
+          </div>
+          <li *ngFor="let store of storeList" (click)="restaurantsClick(store)">
+            <app-store-item [store]="store"></app-store-item>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

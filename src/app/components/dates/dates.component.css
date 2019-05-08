@@ -1,0 +1,41 @@
+.dates-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+table {
+  margin-top:50px;
+  text-align:center;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .dates-wrapper {
+    display:block;
+    text-align:center;
+    margin-top:0;
+  }
+
+  ngb-datepicker {
+    margin-top:20px;
+  }
+
+  .btn.btn-primary {
+    display: block;
+    width: 70%;
+    margin: 18px auto 0;
+  }
+
+  .table-dark td, .table-dark th, .table-dark thead th {
+    font-size:6px;
+  }
+}
+
+.table-custom {
+  background-color: #007bff;
+  color: #fff;
+}

@@ -1,0 +1,18 @@
+.store-section {
+  position: relative;
+  background-image: url("https://i.imgur.com/oSJqoA5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  min-height: 100%;
+}
+
+ul {
+  list-style:none;
+  max-height:799px;
+  overflow-y:scroll;
+}
+
+ul li {
+  cursor:pointer;
+}

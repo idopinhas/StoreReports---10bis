@@ -1,0 +1,7 @@
+@media screen and (max-width:480px) {
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
+}

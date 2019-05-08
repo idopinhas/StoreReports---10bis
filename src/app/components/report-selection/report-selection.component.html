@@ -1,0 +1,48 @@
+<section class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title text-center mb-3 text-white">
+          <h1>Choose Your Report :</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-4 m-auto">
+        <a class="card" (click)="routeToSelctedReport('basic')">
+          <img class="card-img-top" src="https://www.smartdatacollective.com/wp-content/uploads/2017/05/analytics.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Regular Store Report</h5>
+            <p class="card-text">Some quick example text to build on the Report and make up the bulk , Lorem ipusm is cool .</p>
+            <button class="btn btn-primary">Go To Report</button>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-4 m-auto">
+        <a class="card" (click)="routeToSelctedReport('sumReport')">
+          <img class="card-img-top" src="http://www.resourceondemand.com/wp-content/uploads/2013/06/DaddyAnalytics.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Report Type IV</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content .</p>
+            <button class="btn btn-primary">Go To Report</button>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-4 m-auto">
+        <a class="card" (click)="routeToSelctedReport('shuffle')">
+          <img class="card-img-top" src="https://whub-assets.s3.amazonaws.com/uploads/product_profile_photo/file/589190eecb7b82000673ccef/Platform_Analytics_Chatbots.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Shuffle Report Example</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content .</p>
+            <button class="btn btn-primary">Go To Report</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <video width="100%" autoplay="autoplay" loop="loop" #homeVideo>
+    <div>asdas</div>
+    <source src="../../assets/videos/workspace-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>

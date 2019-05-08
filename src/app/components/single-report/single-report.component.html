@@ -1,0 +1,20 @@
+<section class="single-item">
+  <div class="container">
+    <div class="breadcrumb-wrapper mt-5">
+      <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-8 m-auto pt-4">
+        <app-back-btn></app-back-btn>
+        <div class="list-group mt-5">
+          <a class="list-group-item list-group-item-action flex-column align-items-start mt-3" *ngFor="let item of userDetalis | keyvalue ">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Subject : <b>{{item.key}}</b></h5>
+            </div>
+            <p class="mb-1">Value: <b>{{item.value}}</b></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

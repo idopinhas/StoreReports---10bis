@@ -1,0 +1,18 @@
+<table class="table table-hover table-custom mt-5" *ngIf="data">
+  <thead>
+    <tr>
+      <th scope="col">OrderId</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Customer Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data" (click)="itemClick(item)">
+      <td>{{item.ID}}</td>
+      <td>30/12/2018 9:57</td>
+      <td>{{item.EndTimeString}}</td>
+      <td>{{item.CustomerName}}</td>
+    </tr>
+  </tbody>
+</table>

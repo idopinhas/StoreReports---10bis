@@ -1,0 +1,24 @@
+<section class="dates-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 m-auto pt-5">
+        <div class="breadcrumb-wrapper mt-5">
+          <app-breadcrumb></app-breadcrumb>
+        </div>
+        <div class="dates-wrapper">
+          <app-back-btn (click)="backBtnClick()"></app-back-btn>
+          <ngb-datepicker (select)="dateStartSelect($event)"></ngb-datepicker>
+          <ngb-datepicker (select)="dateEndSelect($event)"></ngb-datepicker>
+          <button class="btn btn-primary" (click)="datesSelected()">Go</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-8 m-auto">
+        <template #reportContainer>
+        </template>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,20 @@
+<section class="pos-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 m-auto">
+        <div class="breadcrumb-wrapper">
+          <app-breadcrumb></app-breadcrumb>
+        </div>
+        <app-back-btn (click)="backBtnClick()"></app-back-btn>
+        <ul class="list-group mt-5">
+          <div class="loader" *ngIf="loaderActive">
+            <img src="https://gifimage.net/wp-content/uploads/2018/04/loader-gif-transparent-background-10.gif" alt="loader" />
+          </div>
+          <li *ngFor="let posItem of posList" (click)="posClicked(posItem)">
+            <app-pos-item [pos]="posItem"></app-pos-item>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
